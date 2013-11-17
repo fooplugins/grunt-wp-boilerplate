@@ -1,0 +1,6 @@
+{
+	"plugin-name.php": "{%= slug %}.php",
+    "public/class-plugin-name.php": "public/class-{%= slug %}.php",
+    "admin/class-plugin-name-admin.php": "public/class-{%= slug %}-admin.php",
+	"languages/plugin-name.pot": "languages/{%= slug %}.pot"
+}
