@@ -1,6 +1,6 @@
 # grunt-wp-plugin
 
-> Create a WordPress plugin with [grunt-init][] based on the WordPress plugin boilerplate
+> Create a WordPress plugin with [grunt-init][] based on the [WordPress Plugin Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate)
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
