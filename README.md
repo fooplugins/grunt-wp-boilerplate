@@ -4,6 +4,9 @@
 
 [grunt-init]: http://gruntjs.com/project-scaffolding
 
+## Please Note
+This is a work in progress! This is not complete and does not rename all variables!
+
 ## Installation
 If you haven't already done so, install [grunt-init][].
 
