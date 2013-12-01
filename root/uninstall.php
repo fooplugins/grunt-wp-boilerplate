@@ -2,11 +2,11 @@
 /**
  * Fired when the plugin is uninstalled.
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   {%= safe_name %}
+ * @author    {%= author_name %} <{%= author_email %}>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2013 Your Name or Company Name
+ * @link      {%= homepage %}
+ * @copyright 2013 {%= author_name %}
  */
 
 // If uninstall not called from WordPress, then exit

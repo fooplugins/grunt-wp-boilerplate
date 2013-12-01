@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name.
+ * {%= safe_name %}
  *
- * @package   Plugin_Name_Admin
- * @author    Your Name <email@example.com>
+ * @package   {%= safe_name %}_Admin
+ * @author    {%= author_name %} <{%= author_email %}>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2013 Your Name or Company Name
+ * @link      {%= homepage %}
+ * @copyright 2013 {%= author_name %}
  */
 
 /**
- * Plugin class. This class should ideally be used to work with the
+ * {%= safe_name %}_Admin class. This class should ideally be used to work with the
  * administrative side of the WordPress site.
  *
  * If you're interested in introducing public-facing
@@ -18,10 +18,10 @@
  *
  * TODO: Rename this class to a proper name for your plugin.
  *
- * @package Plugin_Name_Admin
- * @author  Your Name <email@example.com>
+ * @package {%= safe_name %}_Admin
+ * @author  {%= author_name %} <{%= author_email %}>
  */
-class Plugin_Name_Admin {
+class {%= safe_name %}_Admin {
 
 	/**
 	 * Instance of this class.
@@ -48,10 +48,10 @@ class Plugin_Name_Admin {
 	 * @since     1.0.0
 	 */
 	private function __construct() {
-		
+
 		/*
 		 * TODO :
-		 * 
+		 *
 		 * - Decomment following lines if the admin class should only be available for super admins
 		 */
 		/* if( ! is_super_admin() ) {
@@ -66,7 +66,7 @@ class Plugin_Name_Admin {
 		 * - Rename "Plugin_Name" to the name of your initial plugin class
 		 *
 		 */
-		$plugin = Plugin_Name::get_instance();
+		$plugin = {%= safe_name %}::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
 
 		// Load admin style sheet and JavaScript.
@@ -99,10 +99,10 @@ class Plugin_Name_Admin {
 	 * @return    object    A single instance of this class.
 	 */
 	public static function get_instance() {
-		
+
 		/*
 		 * TODO :
-		 * 
+		 *
 		 * - Decomment following lines if the admin class should only be available for super admins
 		 */
 		/* if( ! is_super_admin() ) {
@@ -136,7 +136,7 @@ class Plugin_Name_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Plugin_Name::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), {%= safe_name %}::VERSION );
 		}
 
 	}
@@ -160,7 +160,7 @@ class Plugin_Name_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Plugin_Name::VERSION );
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), {%= safe_name %}::VERSION );
 		}
 
 	}
@@ -187,8 +187,8 @@ class Plugin_Name_Admin {
 		 *   For reference: http://codex.wordpress.org/Roles_and_Capabilities
 		 */
 		$this->plugin_screen_hook_suffix = add_options_page(
-			__( 'Page Title', $this->plugin_slug ),
-			__( 'Menu Text', $this->plugin_slug ),
+			__( '{%= title %} Settings', $this->plugin_slug ),
+			__( '{%= title %}', $this->plugin_slug ),
 			'manage_options',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
