@@ -6,7 +6,7 @@
  * @author    {%= author_name %} <{%= author_email %}>
  * @license   GPL-2.0+
  * @link      {%= homepage %}
- * @copyright 2013 {%= author_name %}
+ * @copyright 2014 {%= author_name %}
  */
 
 // If uninstall not called from WordPress, then exit
