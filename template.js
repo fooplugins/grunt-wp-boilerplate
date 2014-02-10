@@ -2,7 +2,7 @@
  * grunt-wp-boilerplate
  * https://github.com/fooplugins/grunt-wp-boilerplate
  *
- * Copyright (c) 2013 Brad Vincent, FooPlugins LLC
+ * Copyright (c) 2014 Brad Vincent, FooPlugins LLC
  * Licensed under the MIT License
  */
 
