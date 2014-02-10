@@ -16,8 +16,6 @@
  * If you're interested in introducing public-facing
  * functionality, then refer to `class-plugin-name.php`
  *
- * TODO: Rename this class to a proper name for your plugin.
- *
  * @package {%= safe_name %}_Admin
  * @author  {%= author_name %} <{%= author_email %}>
  */
@@ -50,9 +48,9 @@ class {%= safe_name %}_Admin {
 	private function __construct() {
 
 		/*
-		 * TODO :
+		 * @TODO :
 		 *
-		 * - Decomment following lines if the admin class should only be available for super admins
+		 * - Uncomment following lines if the admin class should only be available for super admins
 		 */
 		/* if( ! is_super_admin() ) {
 			return;
@@ -60,11 +58,6 @@ class {%= safe_name %}_Admin {
 
 		/*
 		 * Call $plugin_slug from public plugin class.
-		 *
-		 * TODO:
-		 *
-		 * - Rename "Plugin_Name" to the name of your initial plugin class
-		 *
 		 */
 		$plugin = {%= safe_name %}::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
@@ -86,8 +79,8 @@ class {%= safe_name %}_Admin {
 		 * Read more about actions and filters:
 		 * http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
 		 */
-		add_action( 'TODO', array( $this, 'action_method_name' ) );
-		add_filter( 'TODO', array( $this, 'filter_method_name' ) );
+		add_action( '@TODO', array( $this, 'action_method_name' ) );
+		add_filter( '@TODO', array( $this, 'filter_method_name' ) );
 
 	}
 
@@ -101,9 +94,9 @@ class {%= safe_name %}_Admin {
 	public static function get_instance() {
 
 		/*
-		 * TODO :
+		 * @TODO :
 		 *
-		 * - Decomment following lines if the admin class should only be available for super admins
+		 * - Uncomment following lines if the admin class should only be available for super admins
 		 */
 		/* if( ! is_super_admin() ) {
 			return;
@@ -119,10 +112,6 @@ class {%= safe_name %}_Admin {
 
 	/**
 	 * Register and enqueue admin-specific style sheet.
-	 *
-	 * TODO:
-	 *
-	 * - Rename "Plugin_Name" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -143,10 +132,6 @@ class {%= safe_name %}_Admin {
 
 	/**
 	 * Register and enqueue admin-specific JavaScript.
-	 *
-	 * TODO:
-	 *
-	 * - Rename "Plugin_Name" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -179,10 +164,8 @@ class {%= safe_name %}_Admin {
 		 *
 		 *        Administration Menus: http://codex.wordpress.org/Administration_Menus
 		 *
-		 * TODO:
+		 * @TODO:
 		 *
-		 * - Change 'Page Title' to the title of your plugin admin page
-		 * - Change 'Menu Text' to the text for menu item for the plugin settings page
 		 * - Change 'manage_options' to the capability you see fit
 		 *   For reference: http://codex.wordpress.org/Roles_and_Capabilities
 		 */
@@ -231,7 +214,7 @@ class {%= safe_name %}_Admin {
 	 * @since    1.0.0
 	 */
 	public function action_method_name() {
-		// TODO: Define your action hook callback here
+		// @TODO: Define your action hook callback here
 	}
 
 	/**
@@ -244,7 +227,7 @@ class {%= safe_name %}_Admin {
 	 * @since    1.0.0
 	 */
 	public function filter_method_name() {
-		// TODO: Define your filter hook callback here
+		// @TODO: Define your filter hook callback here
 	}
 
 }
