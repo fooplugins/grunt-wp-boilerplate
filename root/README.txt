@@ -1,4 +1,4 @@
-=== TODO: Plugin Name ===
+=== @TODO: Plugin Name ===
 Contributors: (this should be a list of wordpress.org userids)
 Donate link: http://example.com/
 Tags: comments, spam
@@ -106,6 +106,10 @@ This version fixes a security related bug.  Upgrade immediately.
 You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
 plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
 "installation."  Arbitrary sections will be shown below the built-in sections outlined above.
+
+== Updates ==
+
+This plugin supports the [GitHub Updater](https://github.com/afragen/github-updater) plugin, so if you install that, this plugin becomes automatically updateable direct from GitHub. Any submission to WP.org repo will make this redundant.
 
 == A brief Markdown Example ==
 

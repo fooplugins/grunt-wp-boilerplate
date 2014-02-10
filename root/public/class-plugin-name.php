@@ -16,8 +16,6 @@
  * If you're interested in introducing administrative or dashboard
  * functionality, then refer to `class-{%= slug %}-admin.php`
  *
- * TODO: Rename this class to a proper name for your plugin.
- *
  * @package {%= safe_name %}
  * @author  {%= author_name %} <{%= author_email %}>
  */
@@ -33,8 +31,6 @@ class {%= safe_name %} {
 	const VERSION = '{%= version %}';
 
 	/**
-	 * TODO - Rename "plugin-name" to the name your your plugin
-	 *
 	 * Unique identifier for your plugin.
 	 *
 	 *
@@ -78,8 +74,8 @@ class {%= safe_name %} {
 		/* Define custom functionality.
 		 * Refer To http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
 		 */
-		add_action( 'TODO', array( $this, 'action_method_name' ) );
-		add_filter( 'TODO', array( $this, 'filter_method_name' ) );
+		add_action( '@TODO', array( $this, 'action_method_name' ) );
+		add_filter( '@TODO', array( $this, 'filter_method_name' ) );
 
 	}
 
@@ -88,7 +84,7 @@ class {%= safe_name %} {
 	 *
 	 * @since    1.0.0
 	 *
-	 *@return    Plugin slug variable.
+	 * @return    Plugin slug variable.
 	 */
 	public function get_plugin_slug() {
 		return $this->plugin_slug;
@@ -234,7 +230,7 @@ class {%= safe_name %} {
 	 * @since    1.0.0
 	 */
 	private static function single_activate() {
-		// TODO: Define activation functionality here
+		// @TODO: Define activation functionality here
 	}
 
 	/**
@@ -243,7 +239,7 @@ class {%= safe_name %} {
 	 * @since    1.0.0
 	 */
 	private static function single_deactivate() {
-		// TODO: Define deactivation functionality here
+		// @TODO: Define deactivation functionality here
 	}
 
 	/**
@@ -257,7 +253,7 @@ class {%= safe_name %} {
 		$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
 
 		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
-		load_plugin_textdomain( $domain, FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . 'languages/' );
+		load_plugin_textdomain( $domain, FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
 
 	}
 
@@ -289,7 +285,7 @@ class {%= safe_name %} {
 	 * @since    1.0.0
 	 */
 	public function action_method_name() {
-		// TODO: Define your action hook callback here
+		// @TODO: Define your action hook callback here
 	}
 
 	/**
@@ -302,7 +298,7 @@ class {%= safe_name %} {
 	 * @since    1.0.0
 	 */
 	public function filter_method_name() {
-		// TODO: Define your filter hook callback here
+		// @TODO: Define your filter hook callback here
 	}
 
 }
